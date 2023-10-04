@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+body, li {
+    font-family: Garamond, serif;
+    font-size: 18px;
+}
+
+body{
+    background-color: #FFFAFF;
+}
+
+header {
+    position:fixed;
+    top:0;
+    align-items: center;
+    background-color: #FFFAFF;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    min-height: 80px;
+}
+
+img#header-img {
+    height: 75px;
+}
+
+.nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 320px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section#desc {
+    margin-top: 100px;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+}
+
+#desc p {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    height: 160px;
+    width: 380px;
+}
+
+b{
+    color: #FF3131;
+}
+
+section#yt {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* products boxes which I don't feel like styling anymore so it is what it is. one day i'll fix it*/
+
+section#price{
+    padding: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product {
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #FF3131;
+    flex: 1;
+    padding: 16px;
+}
+
+li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    background-color: aliceblue;
+}
+
+/* end of boxes i have to restyle one day */
+
+.form {
+    border: 1px solid black;
+    text-align: center;
+    width: 380px;
+    margin: auto;
+}
+
+.form h2 {
+    margin-top: 12px;
+}
+
+input#submit {
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+footer{
+    margin-top: 45px;
+}
+
+footer ul, footer p {
+    display: flex;
+    justify-content: right;
+}
+
+/* requirements from FCC that I forgot */
+@media only screen and (max-width: 600px) {
+    .product {
+      display: block;
+      width: 100%;
+    }
+  }
